@@ -8,6 +8,10 @@ dependencies:
   override:
     - docker info
 
+database:
+  override:
+    - echo "Skipping DB section."
+    
 test:
   override:
     - docker version
